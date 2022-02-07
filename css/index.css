@@ -1,0 +1,31 @@
+body {
+    text-align: center;
+    background-color: rgb(96, 245, 250);
+    border: 1px solid black;
+    color: rgb(22, 20, 20);
+    font-weight: 700;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+
+.header__albergue-image-container {
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+.header__albergue-image {
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+.article__title
+.article__welcome {
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.footer {
+    margin-top: 16px;
+}

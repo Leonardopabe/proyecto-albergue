@@ -10,17 +10,24 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
+        <figure class="header__albergue-image-container">
         <nav>
-            <img src="./img/salvando huellitas.jpg" alt="patitas a la obra_img" width="360px">
+            <img src="./img/salvando huellitas.jpg" alt="patitas a la obra_img" class="header__albergue-image"/>
         </nav>
+        </figure>
     </header>
     <main>
         <button href="#">¿QUIENES SOMOS?</button>
         <button href="#">MISIÓN</button>
         <button href="#">VISIÓN</button>
-    <h1>¡BIENVENIDOS A SALVANDO HUELLITAS!</h1>
-    <h2>Estamos muy contentos de tenerte por aquí y esperamos que puedas ser parte de está linda familia 🤝💚.</h2>
+        <article class="article">
+            <!-- title -->
+    <h1 class="article__title">¡BIENVENIDOS A SALVANDO HUELLITAS!</h1>
+    <!-- welcome -->
+    <h2 class="article__welcome">Estamos muy contentos de tenerte por aquí y esperamos que puedas ser parte de está linda familia 🤝💚.</h2>
+    <!-- presentation -->
+         </article>
     <hr>
     <h2>¿QUIENES SOMOS?</h2>
     <img src="https://img.freepik.com/vector-gratis/ilustracion-divertidos-dibujos-animados-perros-gatos-lindos-mejores-amigos_112554-246.jpg?size=338&ext=jpg" alt="perros y gatos" class="perros y gatos_img" width="145px">
@@ -65,12 +72,25 @@
                 <option value="primaria">Alimentos y todos los servicios a disponibilidad</option>
             </select>
             <h2>¿TE ANIMAS A COLABORAR?</h2>
-            <p>Nos sería de gran ayuda tu colaboración, cualquier donación es bien recibida de todo corazón. </p>
+            <p>Nos sería de gran ayuda tu colaboración, cualquier donación es bien recibida de todo corazón. Aceptamos:</p>
+            <input type="radio" name="alimento" id="alimento" value="alimento" required>
+            <label for="alimentos">Alimento</label>
+            <input type="radio" name="periódicos y revistas" id="periódicos y revistas" value="periódicos y revistas" required>
+            <label for="periódicos y revistas2wq1">Periódicos y revistas</label>
+            <input type="radio" name="jaulas" id="jaulas" value="jaulas" required>
+            <label for="jaulas">Jaulas</label>
+            <input type="radio" name=" Productos de limpieza" id=" Productos de limpieza" value=" Productos de limpieza" required>
+            <label for=" Productos de limpieza">Productos de limpieza</label>
+            <input type="radio" name="Productos de higiene" id="Productos de higiene" value="Productos de higiene" required>
+            <label for="Productos de higiene">Productos de higiene</label>
+            <input type="radio" name="Productos sanitarios" id="Productos sanitarios" value="Productos sanitarios" required>
+            <label for="Productos sanitarios">Productos sanitarios</label>
+            <hr>
 
 
     </main>
         
-        <footer>
+        <footer class="footer">
             <a href="https://www.tiktok.com/es/" target="blank">
                 <img src="https://cdn-icons-png.flaticon.com/512/3046/3046126.png" alt="TikTok" class="TikTok_img" width="36px"></a>
                 <a href="https://www.instagram.com/?hl=es-la" target="blank">
@@ -88,6 +108,7 @@
                                     <img src="https://cdn-icons-png.flaticon.com/512/5968/5968819.png" alt="Twitch" class="Twitch_img" width="36px"></a>
                                     <a href="https://twitter.com/i/flow/login" target="blank">
                                         <img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt="Twitter" class="Twitter_img" width="36px"></a>
+                                        <p>Desarrollado con mucho 💕 por Leonardo PB &copy; 2022. </p>
         </footer>
 </body>
 </html>
