@@ -1,4 +1,9 @@
 body {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
   text-align: center;
   background-color: rgba(244, 189, 45, 0.2);
   color: rgb(22, 20, 20);
@@ -8,27 +13,51 @@ body {
 header {
   background-color: #000000;
   background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
-  padding: 50px;
+  box-shadow: #f4bd2d;
+  padding: 40px;
+  width: 100%;
 }
 
-.intro { grid-area: intro; }
-.quienes_somos { grid-area: quienes_somos; }
-.mision { grid-area: mision; }
-.vision { grid-area: vision; }
-.form { grid-area: form; }
-.volunteer { grid-area: volunteer; }
+.header {
+  grid-area: header;
+}
+.main {
+  grid-area: main;
+}
+.footer {
+  grid-area: footer;
+}
+
+.intro {
+  grid-area: intro;
+}
+.quienes_somos {
+  grid-area: quienes_somos;
+}
+.mision {
+  grid-area: mision;
+}
+.vision {
+  grid-area: vision;
+}
+.form {
+  grid-area: form;
+}
+.volunteer {
+  grid-area: volunteer;
+}
 
 main {
   padding: 50px;
+  width: 100%;
   display: grid;
   grid-template-areas:
-    'intro intro'
-    'quienes_somos quienes_somos'
-    'mision vision'
-    'form form'
-    'volunteer volunteer';
+    "intro intro"
+    "quienes_somos quienes_somos"
+    "mision vision"
+    "form form"
+    "volunteer volunteer";
 }
-
 
 h1 {
   font-size: 2rem;
@@ -36,7 +65,18 @@ h1 {
 
 p {
   font-size: 1.2rem;
+  padding: 15px;
+  background-color: #ffff;
 }
+
+p:first-child {
+  color: blue;
+}
+
+div:hover p {
+  display: flow-root;
+}
+
 .header__albergue-image-container {
   max-width: 360px;
   margin: 50px auto;
@@ -71,7 +111,7 @@ p {
 }
 
 .contacto__form-button {
-    align-self: center;
+  align-self: center;
   background-color: var(--highlight-color-1);
   border: 0.1rem solid var(--highlight-color-1);
   padding: 0.5rem 1rem;
@@ -85,4 +125,29 @@ p {
   background-color: rgba(155, 248, 142, 0.712);
   color: rgba(56, 48, 48, 0.815);
   padding: 2rem 0;
+}
+
+@media (max-width: 768px) {
+  .nav_container {
+    flex-direction: column;
+    display: flex;
+  }
+  .button_nav {
+    margin: 20px;
+  }
+
+  main {
+    display: grid;
+    grid-template-areas:
+      "intro"
+      "quienes_somos"
+      "mision"
+      "vision"
+      "form"
+      "volunteer";
+  }
+
+  .image_section {
+    width: 90%;
+  }
 }
