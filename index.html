@@ -50,7 +50,7 @@ Brindándoles mucho cariño, seguridad y amor teniendo como último paso  darlos
         </nav>
     </header>
     <main class="main">
-        <section id="intro" class="intro">
+        <section id="intro" class="intro section_container">
             <h1>¡BIENVENIDOS A SALVANDO HUELLITAS!</h1>
             <p>Estamos muy contentos de tenerte por aquí y esperamos que puedas ser parte de está linda familia 🤝💚.
             </p>
@@ -69,7 +69,7 @@ Brindándoles mucho cariño, seguridad y amor teniendo como último paso  darlos
                 </p>
             </div>
         </section>
-        <section id="mision" class="mision">
+        <section id="mision" class="mision section_container">
             <h2>MISIÓN</h2>
             <img src="https://cambiaundestino.org/wp-content/uploads/2016/08/esterilizaciones_m.jpg"
                 alt="esterilizaciones_m" class="image_section">
@@ -80,7 +80,7 @@ Brindándoles mucho cariño, seguridad y amor teniendo como último paso  darlos
                 esterilización en distritos de población vulnerable.
             </p>
         </section>
-        <section id="vision" class="vision">
+        <section id="vision" class="vision section_container">
             <h2>VISIÓN</h2>
             <img src="https://image.freepik.com/vector-gratis/gente-feliz-ilustracion-dibujos-animados-animales-domesticos-personas-cuidando-jugando-mascotas_94753-2085.jpg"
                 alt="amor hacia las mascotas" class="image_section">
@@ -93,21 +93,16 @@ Brindándoles mucho cariño, seguridad y amor teniendo como último paso  darlos
             </p>
         </section>
 
-        <section id="form" class="form">
+        <section id="form" class="form section_container">
             <h2>VOLUNTARIO O PADRINO</h2>
             <p>Completa tus datos en este formulario y me estaré contactando contigo lo más pronto posible</p>
-            <input type="text" placeholder="Nombres" name="nombrea" required>
-            <hr>
-            <input type="text" placeholder="Apellidos" name="apellidos" required>
-            <hr>
-            <input type="email" placeholder="Correo" name="email" required>
-            <hr>
-            <input type="tel" placeholder="Telefono" required>
-            <hr>
-            <textarea placeholder="Escriba aquí su mensaje" name="mensaje" cols="20" rows="10" required></textarea>
-            <hr>
-        </section>
-        <section id="volunteer" class="volunteer">
+            <div class="form_container">
+                <input type="text" placeholder="Nombres" name="nombrea" required class="input_form">
+                <input type="text" placeholder="Apellidos" name="apellidos" required class="input_form">
+                <input type="email" placeholder="Correo" name="email" required class="input_form">
+                <input type="tel" placeholder="Telefono" required class="input_form">
+                <textarea placeholder="Escriba aquí su mensaje" name="mensaje" cols="20" rows="10" required class="input_form"></textarea>
+            </div>
             <p>¿Te gustaría ser voluntario o padrino 👉👈?</p>
             <input type="checkbox" name="voluntario" id="voluntario" value="voluntario" />
             <label for="html">Voluntario</label>
@@ -116,66 +111,57 @@ Brindándoles mucho cariño, seguridad y amor teniendo como último paso  darlos
             <input type="checkbox" name="ambos" id="ambos" value="ambos" />
             <label for="html">Ambos</label>
             <p>Haz clic aquí 👇</p>
-            <input type="button" name="enviar" value="Enviar">
-            <hr>
+            <input class="send_button" type="button" name="enviar" value="Enviar">
         </section>
-        <section id="benefits" class="benefits">
+        <section id="benefits" class="benefits section_container">
             <label for="proyecto">Si decides ser voluntario te ofrecemos:</label>
-            <select name="proyecto" id="proyecto" required>
-                <option value="inicial">Un ambiente comodo y agradable</option>
-                <option value="primaria">Buena compañia</option>
-                <option value="primaria">Diversión y entretenimiento</option>
-                <option value="primaria">Alimentos y todos los servicios a disponibilidad</option>
-            </select>
+            <ul>
+                <li>✔ Un ambiente cómodo y agradable</li>
+                <li>✔ Buena compañia</li>
+                <li>✔ Diversión y entretenimiento</li>
+                <li>✔ Alimentos y todos los servicios a disponibilidad</li>
+            </ul>
             <h2>¿TE ANIMAS A COLABORAR?</h2>
             <p>Nos sería de gran ayuda tu colaboración, cualquier donación es bien recibida de todo corazón. Aceptamos:
             </p>
-            <input type="radio" name="alimentos" id="alimentos" value="alimentos" required>
-            <label for="alimentos">Alimentos</label>
-            <input type="radio" name="periódicos y revistas" id="periódicos y revistas" value="periódicos y revistas"
-                required>
-            <label for="periódicos y revistas">Periódicos y revistas</label>
-            <input type="radio" name="jaulas" id="jaulas" value="jaulas" required>
-            <label for="jaulas">Jaulas</label>
-            <input type="radio" name=" Productos de limpieza" id=" Productos de limpieza" value=" Productos de limpieza"
-                required>
-            <label for=" Productos de limpieza">Productos de limpieza</label>
-            <input type="radio" name="Productos de higiene" id="Productos de higiene" value="Productos de higiene"
-                required>
-            <label for="Productos de higiene">Productos de higiene</label>
-            <input type="radio" name="Productos sanitarios" id="Productos sanitarios" value="Productos sanitarios"
-                required>
-            <label for="Productos sanitarios">Productos sanitarios</label>
+            <ul>
+                <li>🐶 Alimentos</li>
+                <li>🐶 Periódicos y revistas</li>
+                <li>🐶 Jaulas</li>
+                <li>🐶 Productos de limpieza</li>
+                <li>🐶 Productos de higiene</li>
+                <li>🐶 Productos sanitarios</li>
+            </ul>
         </section>
     </main>
     <footer class="footer">
         <a href="https://www.tiktok.com/es/" target="blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/3046/3046126.png" alt="TikTok" class="TikTok_img"
+            <img src="https://cdn-icons-png.flaticon.com/512/3046/3046126.png" alt="TikTok" class="TikTok_img icon"
                 width="36px"></a>
         <a href="https://www.instagram.com/?hl=es-la" target="blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="Instagram_img"
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="Instagram_img icon"
                 width="36px"></a>
         <a href="https://web.whatsapp.com/" target="blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="WhatsApp_img"
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="WhatsApp_img icon"
                 width="36px"></a>
         <a href="https://es-la.facebook.com/" target="blank">
             <a href="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&sacu=1&rip=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
                 target="blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968534.png" alt="Gmail" class="Gmail_img"
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968534.png" alt="Gmail" class="Gmail_img icon"
                     width="36px"></a>
             <a href="https://es-la.facebook.com/" target="blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="Facebook" class="Facebook_img"
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="Facebook" class="Facebook_img icon"
                     width="36px"></a>
             <a href="https://www.youtube.com/" target="blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" class="Youtube_img"
+                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" class="Youtube_img icon"
                     width="36px"></a>
             <a href="https://www.twitch.tv/" target="blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968819.png" alt="Twitch" class="Twitch_img"
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968819.png" alt="Twitch" class="Twitch_img icon"
                     width="36px"></a>
             <a href="https://twitter.com/i/flow/login" target="blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt="Twitter" class="Twitter_img"
+                <img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt="Twitter" class="Twitter_img icon"
                     width="36px"></a>
-            <p>Desarrollado con mucho 💕 por Leonardo PB &copy; 2022. </p>
+            <p>Desarrollado con mucho 💕 por Leonardo PB &copy; 2022.</p>
     </footer>
 </body>
 
