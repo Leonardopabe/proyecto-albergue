@@ -132,7 +132,7 @@ div:hover p {
   background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
   padding: 15px 30px;
   color: white;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .footer {
